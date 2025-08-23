@@ -3,7 +3,7 @@
 @section('title', 'Nouvelle affectation de mémoire')
 
 @section('content')
-    @if($recipientType === 'etudian')
+    @if($recipientType === 'etudiants')
         <h2>Félicitations {{ $etudiant->user->prenom }} !</h2>
 
         <div class="success-box">
