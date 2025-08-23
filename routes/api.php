@@ -125,7 +125,7 @@ Route::middleware('auth:sanctum')->group(function () {
         // === GESTION DES SOUTENANCES ===
         Route::get('/soutenances', [AdminController::class, 'listeSoutenances']);
         // GET /api/admin/soutenances?statut=programmee&date_debut=2024-01-01&date_fin=2024-12-31&search=nom
-        // Response: Liste des soutenances avec filtres
+        // Response: Liste des soutenances avec filtre
 
         Route::post('/soutenances', [AdminController::class, 'programmerSoutenance']);
         // POST /api/admin/soutenances
