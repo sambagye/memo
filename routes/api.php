@@ -128,7 +128,7 @@ Route::middleware('auth:sanctum')->group(function () {
         // Response: Liste des soutenances avec filtres
 
         Route::post('/soutenances', [AdminController::class, 'programmerSoutenance']);
-        // POST /api/admin/soutenance
+        // POST /api/admin/soutenances
         // Body: { "etudiant_id": 1, "jury_id": 2, "dossier_soutenance_id": 3, "date_heure_soutenance": "2024-12-15 14:00:00", "salle": "Amphi A", "duree_minutes": 90 }
 
         Route::put('/soutenances/{id}/notes', [AdminController::class, 'validerNotesSoutenance']);
@@ -150,7 +150,7 @@ Route::middleware('auth:sanctum')->group(function () {
         // Response: Liste des mémoires archivés avec filtres
 
         Route::post('/archives', [AdminController::class, 'archiverMemoire']);
-        // POST /api/admin/archives
+        // POST /api/admin/archive
         // Body: { "soutenance_id": 1, "titre_memoire": "...", "fichier_memoire": "memoire.pdf", "resume_francais": "...", "resume_anglais": "...", "mots_cles": "...", "visible_public": true }
 
         // === STATISTIQUES DÉTAILLÉES ===
