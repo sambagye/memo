@@ -125,10 +125,10 @@ Route::middleware('auth:sanctum')->group(function () {
         // === GESTION DES SOUTENANCES ===
         Route::get('/soutenances', [AdminController::class, 'listeSoutenances']);
         // GET /api/admin/soutenances?statut=programmee&date_debut=2024-01-01&date_fin=2024-12-31&search=nom
-        // Response: Liste des soutenances avec filtress
+        // Response: Liste des soutenances avec filtres
 
         Route::post('/soutenances', [AdminController::class, 'programmerSoutenance']);
-        // POST /api/admin/soutenances
+        // POST /api/admin/soutenance
         // Body: { "etudiant_id": 1, "jury_id": 2, "dossier_soutenance_id": 3, "date_heure_soutenance": "2024-12-15 14:00:00", "salle": "Amphi A", "duree_minutes": 90 }
 
         Route::put('/soutenances/{id}/notes', [AdminController::class, 'validerNotesSoutenance']);
