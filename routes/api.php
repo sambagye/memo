@@ -181,7 +181,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
         // === GESTION DES ÉTUDIANTS ===
         Route::get('/mes-etudiants', [EncadreurController::class, 'mesEtudiants']);
-        // GET /api/encadreur/mes-etudiant
+        // GET /api/encadreur/mes-etudiants
         // Response: Liste des étudiants encadrés avec leurs affectations
 
         // === SÉANCES D'ENCADREMENT ===
