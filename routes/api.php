@@ -150,7 +150,7 @@ Route::middleware('auth:sanctum')->group(function () {
         // Response: Liste des mémoires archivés avec filtres
 
         Route::post('/archives', [AdminController::class, 'archiverMemoire']);
-        // POST /api/admin/archive
+        // POST /api/admin/archives
         // Body: { "soutenance_id": 1, "titre_memoire": "...", "fichier_memoire": "memoire.pdf", "resume_francais": "...", "resume_anglais": "...", "mots_cles": "...", "visible_public": true }
 
         // === STATISTIQUES DÉTAILLÉES ===
@@ -181,7 +181,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
         // === GESTION DES ÉTUDIANTS ===
         Route::get('/mes-etudiants', [EncadreurController::class, 'mesEtudiants']);
-        // GET /api/encadreur/mes-etudiants
+        // GET /api/encadreur/mes-etudiant
         // Response: Liste des étudiants encadrés avec leurs affectations
 
         // === SÉANCES D'ENCADREMENT ===
